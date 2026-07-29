@@ -1,0 +1,58 @@
+{
+  "profile": "tabular-data-package",
+  "name": "loa-us-healthcare-price-benchmarks",
+  "title": "Loa U.S. Healthcare Procedure Price Benchmarks",
+  "description": "A dated non-PHI snapshot of aggregate U.S. healthcare procedure price benchmarks from source-labeled hospital prices.",
+  "version": "2026-07-29",
+  "homepage": "https://www.loacare.com/methodology",
+  "licenses": [
+    {
+      "title": "Loa Terms of Service",
+      "path": "https://www.loacare.com/terms"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loa methodology and provenance",
+      "path": "https://www.loacare.com/methodology"
+    },
+    {
+      "title": "CMS Hospital Price Transparency",
+      "path": "https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency"
+    }
+  ],
+  "resources": [
+    {
+      "name": "loa-us-healthcare-price-benchmarks",
+      "title": "Loa U.S. Healthcare Procedure Price Benchmarks",
+      "path": "data/loa-us-healthcare-price-benchmarks.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 234929,
+      "hash": "sha256:89087c2d4ef426ed3e7cb98ba90cbedaab25088b32c7c8ba1c06de3bba439efd",
+      "schema": {
+        "primaryKey": ["procedure_slug", "location_slug"],
+        "fields": [
+          { "name": "dataset_version", "type": "date", "format": "default" },
+          { "name": "procedure_name", "type": "string" },
+          { "name": "procedure_slug", "type": "string" },
+          { "name": "procedure_category", "type": "string" },
+          { "name": "cpt_codes", "type": "string" },
+          { "name": "location", "type": "string" },
+          { "name": "location_slug", "type": "string" },
+          { "name": "city", "type": "string" },
+          { "name": "state", "type": "string" },
+          { "name": "geographic_scope", "type": "string", "constraints": { "enum": ["city", "state"] } },
+          { "name": "source_labeled_hospital_count", "type": "integer", "constraints": { "minimum": 3 } },
+          { "name": "minimum_price_usd", "type": "number", "constraints": { "minimum": 0 } },
+          { "name": "median_price_usd", "type": "number", "constraints": { "minimum": 0 } },
+          { "name": "average_price_usd", "type": "number", "constraints": { "minimum": 0 } },
+          { "name": "maximum_price_usd", "type": "number", "constraints": { "minimum": 0 } },
+          { "name": "latest_source_update", "type": "datetime", "format": "default" },
+          { "name": "source_page_url", "type": "string", "format": "uri" }
+        ]
+      }
+    }
+  ]
+}
