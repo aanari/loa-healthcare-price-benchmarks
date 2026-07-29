@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using these metadata."
+title: "Loa U.S. Healthcare Procedure Price Benchmarks"
+type: dataset
+authors:
+  - name: "Greater Health, LLC"
+abstract: "A dated, non-PHI snapshot of aggregate U.S. healthcare procedure price benchmarks derived from source-labeled hospital prices."
+version: "2026-07-29"
+date-released: "2026-07-29"
+repository: "https://github.com/aanari/loa-healthcare-price-benchmarks"
+url: "https://www.loacare.com/methodology"
+identifiers:
+  - type: url
+    value: "https://www.loacare.com/methodology"
+    description: "Canonical dataset landing page with current provenance and limitations."
+keywords:
+  - "CPT codes"
+  - "healthcare pricing"
+  - "hospital price transparency"
+  - "medical procedure prices"
+  - "price benchmarks"

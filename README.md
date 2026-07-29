@@ -57,7 +57,7 @@ This dataset is useful for exploratory analysis, journalism, research, and softw
 
 > Loa. *U.S. Healthcare Procedure Price Benchmarks*. Version 2026-07-29. https://www.loacare.com/methodology
 
-The canonical landing page is `https://www.loacare.com/methodology`. Please cite that URL so readers can reach current provenance and limitations even after this snapshot is superseded.
+The canonical landing page is `https://www.loacare.com/methodology`. Please cite that URL so readers can reach current provenance and limitations even after this snapshot is superseded. GitHub also renders the repository's machine-readable [`CITATION.cff`](CITATION.cff) as copyable citation formats.
 
 ## Terms
 
