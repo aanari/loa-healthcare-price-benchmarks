@@ -19,6 +19,7 @@ A dated, non-PHI snapshot of aggregate U.S. healthcare procedure price benchmark
 - [Canonical live CSV](https://www.loacare.com/datasets/loa-us-healthcare-price-benchmarks.csv)
 - [Versioned snapshot release](https://github.com/aanari/loa-healthcare-price-benchmarks/releases/tag/v2026-07-29)
 - [Methodology, provenance, and limitations](https://www.loacare.com/methodology)
+- [Hospital price spread report built from this dataset](https://www.loacare.com/reports/hospital-price-spread)
 - [Healthcare pricing API and integration documentation](https://www.loacare.com/api-partnership)
 - [Browse live procedure price pages](https://www.loacare.com/prices)
 - [Machine-readable data package](./datapackage.json)
